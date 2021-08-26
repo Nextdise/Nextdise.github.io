@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" sizes="16x16" href="Sans titre2.png">
+
+    <title>Sanchez Raphaël</title>
+</head>
+<body>
+    <div class = "top"> 
+        
+        <!--Mon prénom et petit images-->
+        <div class ="moi"> 
+            
+            <img class ="imageMoi" src="Sans titre.png" alt ="avatar">
+            <h2>Sanchez <br> Raphaël</h2>
+
+        </div>
+        
+        
+        <div class ="ancres"> 
+            <a href="Index.html">0.1 Accueil</a>
+            <a href="moi.html">0.2 Qui-suis-je</a>
+            <a href="compétence.html">0.3 Mes compétence</a>
+            <a href="contacte.html">0.4 Me contacter</a>
+            
+        </div>
+
+    </div>
+
+<!-- Mon midContacts -->
+    <div class ="midContacts">
+
+
+        <script>
+            function affichenumero (numero) {
+                    var tel = document.getElementById("tel");
+                    tel.innerHTML = numero ;
+            }
+        </script>
+
+
+        <h1>Comment me contacter :</h1>
+        <div class ="contacte">
+            <a href="https://www.instagram.com/nextdise/" target="_blank"> <img src="http://assets.stickpng.com/images/580b57fcd9996e24bc43c521.png" alt= "nom de ton image" height="100px"></a>
+            <a href="https://www.facebook.com/profile.php?id=100009185397981" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Facebook_Logo_%282019%29.png/1024px-Facebook_Logo_%282019%29.png" alt= "nom de ton image" height="100px"></a>
+            
+        </div>
+        <div class ="contacte">
+            <a class ="btn btn1"id="tel" onclick="affichenumero('06 21 52 57 79') ;">Par téléphone</a> 
+            <a id="email" href="mailto:Raphsanchez83@hotmail.com" ><img src="https://crossover.solutions/wp-content/uploads/2016/02/google-mail-logo-vector-download.png" height="100px">  </a> 
+
+        </div>
+    </div>
+
+</body>

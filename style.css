@@ -1,0 +1,191 @@
+body{
+    background:url(fond-decran-noir21.jpg);
+    background-attachment: fixed;
+
+    
+    margin-left: 15%;
+    margin-right: 15%;
+   
+}
+/* général */
+h1{
+    color: white;
+}
+ h2{
+    color: white;
+}
+h3{
+    color: white
+}
+h4{
+    color: white;
+}
+p{
+    color:white;
+}
+label{
+    color:white;
+    padding-right: 10px;
+    font-size: 1rem;
+}
+
+
+/* le top */
+.top{
+   
+
+    height: 12vh;
+    display:flex;
+    justify-content:space-between;
+    /* position: fixed; */
+
+}
+
+.imageMoi{
+    width:80px;
+    clip-path:ellipse(40% 40%);
+
+}
+.moi{
+    display:flex;
+    justify-content: space;
+}
+.ancres{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+/* boutton CV */
+.btn{
+    position: relative;
+    display: block;
+    color: white;
+    font-size: 14px;
+    font-family: "montserrat";
+    text-decoration: none;
+    margin: 30px 0;
+    border: 2px solid #ffffff;
+    padding: 14px 50px;
+    overflow: hidden;
+    transition: 1s all ease;
+  }
+  .btn::before{
+    background: #810081;
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: -1;
+    transition: all 0.6s ease;
+  }
+  
+  .btn1::before{
+    width: 0%;
+    height: 100%;
+  }
+  
+  .btn1:hover::before{
+    width: 100%;
+  }
+
+
+
+/* Mid */
+.mid{
+    display: flex;
+    justify-content: space-between;
+    margin-top:15vh;
+    
+}
+.imageMoiMid{
+    width:40vh;
+    clip-path:ellipse(50% 50%);
+    
+}
+.textMid{
+    margin-top:10vh;
+    margin-left:10vh; 
+}
+
+
+/* MidCompétence */
+
+
+.mid2{
+    margin-top:30vh;
+    
+}
+
+.imagesLogo{
+    display:flex;
+    justify-content:space-around;
+}
+
+/* Mid Expériance */
+
+.midExperiance{
+    margin-top:20vh;
+
+}
+.boutonMidExperiance{
+    display:flex;
+    justify-content:space-around;
+}
+
+/* Mes card */
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.205);
+    transition: 0.3s;
+    width: 100%; 
+    text-align: left;
+    margin-top: 100px;
+   
+    
+}
+.titre{
+    margin-left: 10vh;
+}
+  
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgb(255, 252, 252);
+}
+  
+  .container {
+    padding: 3px 50px;
+}
+
+
+.flex-container {
+    display: flex;
+    
+}
+  
+.flex-container > div {
+    
+    margin: 5px;
+    margin-top :50px;
+    padding: 50px;
+    
+}
+.imagee{
+    float:left;
+    
+    clip-path:ellipse(50% 50%)
+}
+
+/* Mid contacte */
+.midContacts{
+
+    margin-top:20vh;
+
+}
+.contacte{
+    margin-top:5vh;
+    display: flex;
+    justify-content: space-around;
+}

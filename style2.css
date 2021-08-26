@@ -1,0 +1,71 @@
+body{
+    background:url(fond-decran-noir21.jpg);
+    background-attachment: fixed;
+
+    margin-left: 15%;
+    margin-right: 15%;
+   
+}
+/* général */
+h1{
+    color: white;
+}
+ h2{
+    color: white;
+}
+h3{
+    color: white
+}
+h4{
+    color: white;
+}
+p{
+    color:white;
+}
+label{
+    color:white;
+    padding-right: 10px;
+    font-size: 1rem;
+}
+
+
+/* le top */
+.top{
+    height: 12vh;
+    display:flex;
+    justify-content:space-between;
+
+}
+
+.imageMoi{
+    width:80px;
+    clip-path:ellipse(40% 40%);
+
+}
+.moi{
+    display:flex;
+    justify-content: space;
+}
+.ancres{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+/* Mid */
+.mid{
+    display: flex;
+    justify-content: space-between;
+    margin-top:20vh;
+    
+}
+.text{
+    margin-top:10vh;
+}
+.image{
+    width:40vh;
+    border-radius:50%;
+    margin-left: 50px;
+
+}

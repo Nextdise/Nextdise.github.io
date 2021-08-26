@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" sizes="16x16" href="Sans titre2.png">
+
+    <title>Sanchez Raphaël</title>
+</head>
+<body>
+    <div class = "top"> 
+        
+        <!--Mon prénom et petit images-->
+        <div class ="moi"> 
+            
+            <img class ="imageMoi" src="Sans titre.png" alt ="avatar">
+            <h2>Sanchez <br> Raphaël</h2>
+
+        </div>
+        
+        
+        
+        <div class ="ancres"> 
+            <a href="Index.html">0.1 Accueil</a>
+            <a href="moi.html">0.2 Qui-suis-je</a>
+            <a href="compétence.html">0.3 Mes compétence</a>
+            <a href="contacte.html">0.4 Me contacter</a>
+            
+        </div>
+
+    </div> 
+    <div class = "midExperiance">
+        
+        <div class ="boutonMidExperiance">
+            
+            <a onclick="maFonction('maDIVPro')" class ="btn btn1">Mes Expériences Pro </a>
+            
+            <a onclick="maFonction('maDIV')" class ="btn btn1">Mes Expériences étudiantes</a>
+            
+            <script>
+                function maFonction(cible){
+                    var div = document.getElementById(cible);
+                    // On affiche ou non ?
+                    show = (div.style.display === "none")
+                    // Si on affiche, je mets par défaut les 2 en non visible
+                    if(show){
+                        document.getElementById("maDIVPro").style.display = "none"
+                        document.getElementById("maDIV").style.display = "none"
+                    }
+                    div.style.display = (show) ? "block" : "none";
+            
+                }
+            </script>
+
+
+            
+
+        </div>
+        <!-- =======================================DIV POUR LE SCOLAIRE======================================= -->
+        <div id="maDIV" style="display:none;">
+
+            
+
+				<div class="card"> 	<!-- SMI  -->
+					<h2 class ="titre"><u>SMI</u></h2>
+					<div class="flex-container">
+	
+						<div>
+							<img class="imagee" src="SMI-CMJN-BLEU.jpg" alt="Avatar" style="width:30vh"></img>
+						</div>
+                        
+						<div class="container">
+	
+							<h4><b>Présentation:<br>SMI est une entreprise d'informatique et papéterie sur Saint-Maximin</b></h4>
+                            <p><strong>Nature:</strong>Etude/Projet de groupe</p>
+							<p>Temps de travail: ??? </p>
+							<p>Fonction:Dans le cadre du projet Ydays de Ynov campus Aix, j’ai rejoint l’équipe de SMI, un groupe qui travaillait pour l’entreprise SMI, Saint Maximim Informatique, à la construction de leur futur site web. Ma tâche pour ce site web était le cryptage des mots de passe pour la base de données, une partie de la sécurisation du VPS de OVH avec un firewall et la modification du port d’écoute.
+                            <br> Grâce à ce projet et à l’encadrement des Mastères, j’ai pu apprendre plein de petites détails que j’ignorais sur le développement, le réseau, certains langages et sur les mots du dialecte utilisé dans l’informatique. J’ai pu aussi continuer à parfaire mes connaissances en réseau et en sécurité.
+                            </p>
+						</div>
+	
+					</div>
+				</div>
+
+                <div class="card"> 	<!-- Projet 8bit  -->
+					<h2 class ="titre"><u>Projet 8Bit</u></h2>
+					<div class="flex-container">
+	
+						<div>
+							<img class="imagee" src="153908712_901564797269964_6915617831999681050_n.jpg" alt="Avatar" style="width:30vh"></img>
+						</div>
+                        
+						<div class="container">
+	
+							<h4><b>Présentation:<br>Le projet 8bits et un projet de jeux vidéo coder en python avec pygame, présenter au lycée pour le Bac de la matière ISN</b></h4>
+							<p><strong>Nature:</strong>Etude/Projet de groupe</p>
+                            <p><strong>Temps de travail:</strong> plusieurs mois </p>
+							<p><strong>Fonction:</strong> Le projet 8 bit est un projet de développement de jeu vidéo 2D réalisé pour le passage oral du Bac dans la matière ISN (Informatique science du numérique). Ce projet est un jeu de combat (Fighting game) développé en Pythons avec la bibliothèque Pygame. Le jeu a pour but de ressembler aux anciens jeux vidéo de combats tel que street fighter 2 et de se battre avec un partenaire ou contre un Bot.Le code a était réalisé intégralement en utilisant Pygame et les images animées pour ce projet proviennent d’internet.
+                            <br>Grace a ce projet j’ai pu découvrir les bases du développement avec le langage python et voir que l’informatique était plus complexe et profonde que ce que je pensais.
+                            </p>
+						</div>
+	
+					</div>
+				</div>
+            
+            
+
+				<div class="card"> 	<!-- Lazzy hacker  -->
+					<h2 class ="titre"><u>Lazzy Hacker</u></h2>
+					<div class="flex-container">
+	
+						<div>
+							<img class="imagee" src="https://upload.wikimedia.org/wikipedia/commons/a/a1/Lazy_Hackers_logo.png" alt="Avatar" style="width:20vh"></img>
+						</div>
+                        
+						<div class="container">
+	
+							<h4><b>Présentation:<br>Lazzy hacker est un site forum que j'ai crée pour le projet de fin d'année confié par Ynov campus </b></h4>
+							<p><strong>Nature: </strong>Etude</p>
+                            <p><strong>Temps de travaille: </strong> 2 semaines </p>
+							<p><strong>Fonction:</strong> Lazzy Hacker est un  forum web crée dans le cadre d’un projet pour Ynov Campus Aix. Même si ce forum ne sortira jamais, il avais pour but de faire de la vulgarisation sur le piratage informatique. Ce projet devait être réalisé en html css et javascript pour le front, en golang pour le back et en Sqlite pour la Base de données. Il y avait plusieurs contraintes ainsi par exemple: la possibilité de créer un compte, le cryptage des mots de passe, plusieurs rôles avec des droits différents, avoir un bouton like and dislike, mise en place de cookies,...
+                            <br>Ce projet ma permis d’approfondir mes connaissances en html, css, java et golang et m'a permis de découvrir le Sqlite. J’ai beaucoup apprécié ce projet car il m'a repoussé dans mes limites et m'a montré de quoi j’étais capable dans un temps donné.  
+                            </p>
+						</div>
+	
+					</div>
+				</div>
+
+                <div class="card"> 	<!-- 48h  -->
+					<h2 class ="titre"><u>Projet 48h</u></h2>
+					<div class="flex-container">
+	
+						<div>
+							<img class="imagee" src="https://blogwebacappella.files.wordpress.com/2013/02/48hchrono1.jpg?w=600" alt="Avatar" style="width:30vh"></img>
+						</div>
+                        
+						<div class="container">
+                            <h4><b>Présentation:<br>Le projet 48h est un projet d’ynov campus devant être réalisé avec une équipe aléatoire entre les Bachelors 1,2 et 3, et devant être crée en 48h. </b></h4>
+							<p><strong>Nature: </strong>Etude/Projet de groupe</p>
+                            <p><strong>Temps de travaille: </strong>48 heures </p>
+							<p><strong>Fonction:</strong> Le projet 48h est un projet d’ynov campus devant être réalisé avec une équipe aléatoire entre les Bachelores 1,2 et 3, et devant être créé en 48h. Mon groupe et moi avons créé un escape game online basé sur les vulnérabilités et le réseau.Dans ce projet j’ai inventé l’histoire de l’escape game et je me suis occupé de la partie faille avec un Bachelor 3. L’escape game se déroule ainsi : nous sommes invités sur un twitter pour aller chercher des indices, qui nous mènent à des vulnérabilités et une fois passés, on télécharge un Cisco packet tracer à corriger.
+							<br>Ce projet m'a permis de découvrir les failles de sécurité basique et à m’organiser en groupe afin de gerer un travail dans un laps de temps court.
+							</p>
+						</div>
+	
+					</div>
+				</div>
+            </div>  
+        
+        
+
+
+
+        <!-- =======================================DIV POUR LE PROFESIONELLE======================================= -->
+        <div id="maDIVPro" style="display:none;">
+
+                
+				    <div class="card"> 	<!-- Sodétrav kéolis  -->
+				    	<h2 class ="titre"><u>Sodetrav Keolis</u></h2>
+                
+				    	<div class="flex-container">
+	
+				    		<div>
+							    <img class="imagee" src="5ae749d9e717d_logosodetrav2.jpg" alt="Avatar" style="width:30vh"></img>
+						    </div>
+                        
+					    	<div class="container">
+	
+				    			<h4><b>Présentation:<br>Sodetrav Keolis est une entreprise de transport implanté sur quatres sites.</b></h4>
+                                    <p><strong>Nature:</strong> Stages</p>
+								    <p><strong>Temps de travail:</strong> 1mois </p>
+							        <p><strong>Fonction:</strong> Mon stage de Bachelor 1 pour Ynov Campus Aix s’est déroulé en partie à la société de transport en commun, Sodétrav kéolis de Hyères. Cette période s’est fractionnée dans les différents services de l’entreprise, bureau RH (ressources humaines), recrutement pour la saison estivale, réception des pièces mécaniques du magasin du garage. Au cours de ce mois, on m’a confié plusieurs tâches à affectuer et de l’observation. 
+										<br>La première de mes fonctions au bureau RH, était de récupérer les dossiers des employés et de vérifier si toutes les pièces étaient à jour, permis de conduire, papiers d’identité, numéro d’urgence, adresse, visite médicale et autres. 
+										<br>Après étude des papiers, je devais les inscrire dans un tableau en indiquant si tout le dossier était complet ou s’il manquait un élèment. Ma deuxième mission était l’observation des recrutements pour la saison estivale. Ma troisième fonction était d’aider le magasinier du garage, à organiser, ranger et faire de nouvelle commande de pièces. Le 4ème de mes services était de m’assurer de la bonne réception des nouvelles pièces commandées, en faire part au magasinier, les organiser et les ranger.
+										<br><br>Même si ce stage était plutôt simple, car ce fut un stage surtout de découverte du monde du travail, j'ai apprécié d'observer et de comprendre comment fonctionnent tous les petits rouages qui participent au bon roulement d'une entreprise.
+										
+                                        </p>
+						    </div>
+	
+					    </div>
+				    </div>
+                
+                <div class="card"> 	<!-- Trésor public  -->
+					<h2 class ="titre"><u>Trésor Public</u></h2>
+					<div class="flex-container">
+	
+						<div>
+							<img class="imagee" src="2-logo-du-tresor-public-zoom.jpg" alt="Avatar" style="width:30vh"></img>
+						</div>
+                        
+						<div class="container">
+	
+							<h4><b>Présentation:<br>Trésor public de Hyères les palmières.</b></h4>
+                            <p><strong>Nature:</strong> Travail saisonnier / stage.</p>
+							<p>Temps de travaille: 2mois </p>
+							<p><strong>Fonction:</strong> Mon travail saisonnier ou la 2ème partie de mon stage, s’est déroulé à la trésorerie de Hyères, qui se situe dans la Mairie de la ville. Au cours de ce mois, les missions qui m’ont été confiées furent diverses. La 1ère était de ranger, classer et organiser les archives de la trésorerie, pour pouvoir par la suite enlever les dossiers trop vieux. La 2ème était d’effectuer des recherches d’adresses sur le logiciel utilisé par le personnel, dans le but de mettre à jour la base de données de la trésorerie et de retrouver les personnes qui ont des impayés pour leur envoyer des lettres de rappel. La 3ème de mes tâches était de faire une petite présentation à l’équipe de la trésorerie sur les dangers des pirates informatiques, en leur expliquant les concepts de base de la cybersécurité, quelques types d’attaques informatiques et les gestes à avoir en cas de doutes. La 4ème de mes missions était de trier les dossiers des différentes communes de Hyères, pour faciliter la recherche future des employés de la trésorerie.  
+                            <br> Le travail de la trésorerie m’a appris à trier des dossiers et les organiser. Cela m’a permis de m’entraîner sur mon organisation des tâches et à les optimiser. 
+                            </p>
+						</div>
+	
+					</div>
+				</div>
+            
+        </div>
+        
+
+    </div>
+
+
+
+
+</body>
